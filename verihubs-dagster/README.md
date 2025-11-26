@@ -1,3 +1,9 @@
+first, activate the virtual environment
+
+```bash
+    .pyenv\scripts\activate
+```
+
 to install the required packages to run this project, on the terminal go to setup.py, and type the following in the terminal
 
 ```bash
@@ -14,4 +20,10 @@ to access the Dagster web UI, type the following in the terminal
 
 after the connection has been established, head to your web browser and go to localhost:3000 in order to access the Dagster web UI
 
-in the Lineage menu, there should be assets related to this project. go ahead and click the leftmost asset and click materialize. once it's completed you can proceed with the other assets.
+in the Lineage menu, there should be assets related to this project. go ahead and click the leftmost asset and click materialize. once it's completed you can continue with the next assets as indicated by the arrow marks.
+
+to view the graphs, simply materialize the assets within the group 'visualization' and once it's finished processing there should be a pop up of the graphs.
+
+Summary:
+- the most profitable month based on total revenue is April
+- the data file is horribly inconsistent in regards to the status, hence in order to simplify and increase readability of the data, we have compressed several status into one status.
