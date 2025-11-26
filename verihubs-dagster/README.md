@@ -1,47 +1,17 @@
-# verihubs_dagster
-
-This is a [Dagster](https://dagster.io/) project scaffolded with [`dagster project scaffold`](https://docs.dagster.io/guides/build/projects/creating-a-new-project).
-
-## Getting started
-
-First, install your Dagster code location as a Python package. By using the --editable flag, pip will install your Python package in ["editable mode"](https://pip.pypa.io/en/latest/topics/local-project-installs/#editable-installs) so that as you develop, local code changes will automatically apply.
+to install the required packages to run this project, on the terminal go to setup.py, and type the following in the terminal
 
 ```bash
-pip install -e ".[dev]"
+    pip install .
 ```
 
-Then, start the Dagster UI web server:
+once the installation is completed, go to the directory which contains the dagster project. in this case that would be the verihubs-dagster folder
+
+to access the Dagster web UI, type the following in the terminal
 
 ```bash
-dagster dev
+    dagster dev
 ```
 
-Open http://localhost:3000 with your browser to see the project.
+after the connection has been established, head to your web browser and go to localhost:3000 in order to access the Dagster web UI
 
-You can start writing assets in `verihubs_dagster/assets.py`. The assets are automatically loaded into the Dagster code location as you define them.
-
-## Development
-
-### Adding new Python dependencies
-
-You can specify new Python dependencies in `setup.py`.
-
-### Unit testing
-
-Tests are in the `verihubs_dagster_tests` directory and you can run tests using `pytest`:
-
-```bash
-pytest verihubs_dagster_tests
-```
-
-### Schedules and sensors
-
-If you want to enable Dagster [Schedules](https://docs.dagster.io/guides/automate/schedules/) or [Sensors](https://docs.dagster.io/guides/automate/sensors/) for your jobs, the [Dagster Daemon](https://docs.dagster.io/guides/deploy/execution/dagster-daemon) process must be running. This is done automatically when you run `dagster dev`.
-
-Once your Dagster Daemon is running, you can start turning on schedules and sensors for your jobs.
-
-## Deploy on Dagster+
-
-The easiest way to deploy your Dagster project is to use Dagster+.
-
-Check out the [Dagster+ documentation](https://docs.dagster.io/dagster-plus/) to learn more.
+in the Lineage menu, there should be assets related to this project. go ahead and click the leftmost asset and click materialize. once it's completed you can proceed with the other assets.

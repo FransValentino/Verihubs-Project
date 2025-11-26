@@ -1,8 +1,6 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
 import duckdb
-import test
-import pandas as pd
 
 # Connect to DuckDB and fetch data
 conn = test.load_to_csv()

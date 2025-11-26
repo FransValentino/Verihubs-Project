@@ -5,7 +5,10 @@ setup(
     packages=find_packages(exclude=["verihubs_dagster_tests"]),
     install_requires=[
         "dagster",
-        "dagster-cloud"
+        "duckdb",
+        "pandas",
+        "matplotlib",
+        "seaborn"
     ],
     extras_require={"dev": ["dagster-webserver", "pytest"]},
 )
